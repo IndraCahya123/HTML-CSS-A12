@@ -1,6 +1,12 @@
 /* Jangan Didelete */
-*{
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -102,28 +108,58 @@ header nav{
     background-color: yellow;
 }
 
-.movie-list{
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    width: 100%;
-    margin-bottom: 15px;
+/* Start Movie List - Fauzy */
+.movie-list {
+    margin: 20px;
+    padding: 15px;
+    overflow: auto;
+    text-align: center;
 }
 
-.row{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid #000;
+.movie-list h2 {
+    font-size: 32px;
+    font-weight: bold;
 }
 
-.movie{
-    height: 100%;
-    width: 25%;
-    border: 1px solid #000;
-    cursor: pointer;
-    height: 250px;
+hr {
+    width: 250px;
+    border: 1px solid black;
 }
+
+.movie-content {
+    float: left;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.movie-content h3 {
+    margin-top: 10px;
+}
+
+.movie-content a {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.movie-content a:hover {
+    color: #3c6382;
+}
+
+.movie-content img {
+    height: 300px;
+    width: 200px;
+    transition: 0.4s ease;
+    box-shadow: 0 4px 20px 0 rgb(27, 17, 17);
+    border-radius: 10px;
+}
+
+.movie-content img:hover {
+    transform: scale(1.07);
+}
+/* End Movie List - Fauzy */
 
 .group-list{
     display: flex;
