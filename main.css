@@ -126,9 +126,13 @@ header nav{
 /* Start Movie List - Fauzy */
 .movie-list {
     margin: 20px;
-    padding: 15px;
-    overflow: auto;
     text-align: center;
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .movie-list h2 {
@@ -142,8 +146,8 @@ hr {
 }
 
 .movie-content {
-    float: left;
-    width: 20%;
+    flex-wrap: 1;
+    width: 25%;
     margin-top: 20px;
 }
 
