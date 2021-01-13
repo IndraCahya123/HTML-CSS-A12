@@ -34,7 +34,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    background-color: #C4DFE6;
 }
 ol, ul {
 	list-style: none;
@@ -82,7 +83,8 @@ header nav{
 
 .left-nav a{
     color: #fff;
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 0 15px;
     font-size: 24px;
     letter-spacing: 3px;
@@ -90,28 +92,25 @@ header nav{
     line-height: 10vh;
 }
 
-.right-nav li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.right-nav li a{
-    color: #fff;
-    display: block;
-    line-height: 10vh;
-    padding: 0 10px;
-}
-
 /* Start top - Fariz */
 .top{
-    height: 50vh;
-    background-color: #66a5ad;
+    background-image: url("https://static.hollywoodreporter.com/sites/default/files/2012/11/movie_theater_interior_a_l.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    color: #fff;
+}
+
+.top-content{
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .top-content h1 {
-    padding-top: 70px;
-    font-size:90px; 
+    padding-top: 100px;
+    font-size:90px;
+    font-weight: bolder;
+    letter-spacing: 5px;
     font-family: "Sofia", sans-serif;
     text-align: center;
 }
@@ -149,7 +148,7 @@ hr {
 }
 
 .movie-content h3 {
-    margin-top: 10px;
+    margin: 30px 0 20px 0;
 }
 
 .movie-content a {
@@ -181,7 +180,15 @@ hr {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 90px;
     margin-bottom: 15px;
+}
+
+.group-list > h1 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .group{
@@ -193,21 +200,23 @@ hr {
 .personal{
     text-align: center;
     margin: 30px 40px;
-    height: 500px;
-    width: 30%;
+    height: 300px;
+    width: 25%;
     border: 1px solid #07575b;
     cursor: pointer;
-    background-color: #66a5ad;
+    background-color: #C4DFE6;
     padding:20px;
-    border-radius:5px
+    border-radius:5px;
+    box-shadow: 7px 7px 10px #07575b;
+    transition: all 0.5s ease;
 }
 
 .personal img{
-    height: 300px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     background-position: center;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 50%;
     border: 2px solid #003b46;
     margin-bottom: 20px;
 }
@@ -216,17 +225,32 @@ hr {
     line-height:25px;
 }
 
+.data-personal h3{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
 .personal:hover{
-    position: relative;
-    bottom: 10px;
-    box-shadow: 7px 7px 10px #07575b;
+    transform: scale(1.07);
+    box-shadow: 7px 7px 15px #064447;
 }
 
 footer{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 40px;
     background-color: #003b46;
     color: #fff;
+}
+
+.logo-footer{
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer p{
+    margin-left: 10px;
+    font-size: 24px;
 }

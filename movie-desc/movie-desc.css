@@ -50,13 +50,44 @@ table {
 
 /* Mulai Code Disini */
 
-nav{
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
     height: 10vh;
     background-color: #003b46;
+    color: #fff;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.left-nav a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    line-height: 10vh;
+}
+
+main{
+	padding: 150px 0 100px 0;
 }
 
 .container{
-    width: 75%;
+	width: 75%;
     padding: 10px;
     border: 1px solid #000;
     margin: 0 auto;
@@ -72,4 +103,24 @@ nav{
 .description{
     background-color: aquamarine;
     width: 100%;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #003b46;
+    color: #fff;
+}
+
+.logo-footer{
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer p{
+    margin-left: 10px;
+    font-size: 24px;
 }
