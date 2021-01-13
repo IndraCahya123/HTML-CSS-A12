@@ -178,7 +178,7 @@ hr {
 .personal{
     text-align: center;
     margin: 30px 40px;
-    height: 250px;
+    height: 500px;
     width: 30%;
     border: 1px solid #07575b;
     cursor: pointer;
@@ -188,12 +188,17 @@ hr {
 }
 
 .personal img{
-    border-radius:5px;
-    border: 2px solid #003b46
+    height: 300px;
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    border: 2px solid #003b46;
+    margin-bottom: 20px;
 }
 
 .data-personal{
-    line-height:250px;
+    line-height:25px;
 }
 
 .personal:hover{
