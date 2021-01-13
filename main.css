@@ -103,9 +103,25 @@ header nav{
     padding: 0 10px;
 }
 
+/* Start top - Fariz */
 .top{
     height: 50vh;
-    background-color: yellow;
+    background-color: #66a5ad;
+}
+
+.top-content h1 {
+    padding-top: 70px;
+    font-size:90px; 
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+}
+
+.top-content h2 {
+    padding-top :40px;
+    font-size: 50px;
+    text-align: center;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Start Movie List - Fauzy */
