@@ -1,0 +1,14 @@
+/* Responsive Movie List */
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+  .movie-content {
+    width: 30%;
+  }
+}
+
+/* Untuk Smartphone*/
+@media all and (max-width: 670px) {
+  .movie-content {
+    width: 50%;
+  }
+}
