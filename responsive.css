@@ -76,7 +76,6 @@
   .disclaimer{
     font-size: 14px;
     width: 200px;
-    margin-right: -25px;
   }
 
   /* movie description page */
@@ -88,6 +87,7 @@
   .movie-photo img{
     width: 300px;
     height: 400px;
+    margin-right: 0;
   }
 
   .title{
