@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color: #C4DFE6;
+    background-color: #C4DFE6;
+    max-width: 1170px;
 }
 ol, ul {
 	list-style: none;
