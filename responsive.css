@@ -1,14 +1,74 @@
-/* Responsive Movie List */
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
+/* Responsive Movie List */
   .movie-content {
     width: 30%;
+  }
+
+  /* group list */
+  .group{
+    flex-wrap: wrap;
+  }
+
+  .personal{
+    flex-wrap: 1;
   }
 }
 
 /* Untuk Smartphone*/
-@media all and (max-width: 670px) {
+@media (max-width: 670px) {
+  /* navigation */
+  header nav{
+    padding: 0;
+    justify-content: center;
+  }
+
+  /* main top */
+  .top{
+    height: 450px;
+  }
+
+  .top-content h1{
+    padding-top: 120px;
+    font-size: 50px;
+  }
+
+  .top-content h2{
+    font-size: 35px;
+  }
+
+  /* Responsive Movie List */
   .movie-content {
-    width: 50%;
+    width: 100%;
+  }
+
+  /* group list */
+  .group{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personal{
+    width: 60%;
+  }
+
+  /* footer */
+  footer{
+    padding: 10px;
+  }
+
+  .logo-footer img{
+    width: 30px;
+    height: 30px;
+}
+
+  .logo-footer p{
+    font-size: 18px;
+  }
+
+  .disclaimer{
+    font-size: 14px;
+    width: 200px;
+    margin-right: -25px;
   }
 }
