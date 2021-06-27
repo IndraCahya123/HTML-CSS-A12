@@ -1,8 +1,7 @@
-/* Jangan Didelete */
-*{
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+/* CSS RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,8 +27,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
-    background-color: #C4DFE6;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -47,54 +45,61 @@ table {
 	border-spacing: 0;
 }
 
-
-
 /* Mulai Code Disini */
+* {
+    box-sizing: border-box;
+}
 
-a{
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #C4DFE6;
+}
+
+a {
     text-decoration: none;
 }
 
-header{
+header {
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 99;
 }
 
-header nav{
+header nav {
     display: flex;
-    justify-content: space-between;
     height: 10vh;
     background-color: #003b46;
-    color: #fff;
-    align-items: center;
-    padding: 0 30px;
+    padding: 0 45px;
 }
 
-.left-nav a{
+.left-nav a {
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 0 15px;
     font-size: 24px;
-    letter-spacing: 3px;
     font-weight: bold;
+    letter-spacing: 3px;
     line-height: 10vh;
 }
 
-main{
-	padding: 150px 0 100px 0;
+.left-nav img {
+    width: 50px;
+    height: 50px;
 }
 
-.container{
+main {
+	padding: 100px 0;
+}
+
+.container {
+    display: flex;
 	width: 75%;
     padding: 20px;
     margin: 0 auto;
-    display: flex;
 }
 
-.movie-photo img{
+.movie-photo img {
     height: 500px;
     width: 400px;
 	border: 1px solid #000;
@@ -102,40 +107,89 @@ main{
 	margin-right: 20px;
 }
 
-.description{
+.description {
 	padding: 30px;
-    width: 100%;
 }
 
-.title{
+h1 {
 	font-size: 40px;
 	font-weight: bold;
 	margin-bottom: 25px;
 }
 
-.sinopsis{
+.sinopsis {
+    height: 350px;
 	text-align: justify;
+    padding-right: 15px;
 	overflow: auto;
-	height: 350px;
-	padding-right: 15px;
 }
 
-footer{
+footer {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #003b46;
     color: #fff;
+    background-color: #003b46;
+    padding: 20px 40px;
 }
 
-.logo-footer{
+.logo-footer {
     display: flex;
     align-items: center;
 }
 
-.logo-footer p{
-    margin-left: 10px;
+.logo-footer img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-footer p {
     font-size: 24px;
+    margin-left: 10px;
+}
+
+/* Untuk Tablet */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Untuk Smartphone*/
+@media screen and (max-width: 670px) {
+    header nav {
+        justify-content: center;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .logo-footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo-footer p {
+        font-size: 18px;
+    }
+
+    .disclaimer {
+        font-size: 14px;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-photo img {
+        width: 300px;
+        height: 400px;
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
 }

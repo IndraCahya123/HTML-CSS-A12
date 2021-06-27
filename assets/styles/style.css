@@ -1,10 +1,7 @@
-/* Jangan Didelete */
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-
+/* CSS RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,9 +27,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    font-family: 'Quicksand', sans-serif;
     line-height: 1;
-    background-color: #C4DFE6;
 }
 ol, ul {
 	list-style: none;
@@ -50,91 +45,91 @@ table {
 	border-spacing: 0;
 }
 
+/* Mulai CSS Disini */
+* {
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
 
-/* Mulai Code Disini */
-a{
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #C4DFE6;
+}
+
+a {
     text-decoration: none;
 }
 
-main{
-    height: 100%;
-}
-
-header{
+header {
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 99;
 }
 
-header nav{
+header nav {
     display: flex;
-    justify-content: space-between;
     height: 10vh;
     background-color: #003b46;
-    color: #fff;
-    align-items: center;
-    padding: 0 30px;
+    padding: 0 45px;
 }
 
-.left-nav a{
+.left-nav a {
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 0 15px;
     font-size: 24px;
-    letter-spacing: 3px;
     font-weight: bold;
+    letter-spacing: 3px;
     line-height: 10vh;
 }
 
-/* Start top - Fariz */
-.top{
-    background-image: url("https://static.hollywoodreporter.com/sites/default/files/2012/11/movie_theater_interior_a_l.jpg");
+.left-nav img {
+    width: 50px;
+    height: 50px;
+}
+
+.top {
+    background-image: url(../images/bg-top.jpg);
     background-position: center;
     background-size: cover;
     height: 550px;
     color: #fff;
 }
 
-.top-content{
+.top-content {
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
 }
 
 .top-content h1 {
-    padding-top: 100px;
-    font-size:90px;
+    font-family: 'Sofia', sans-serif;
+    font-size: 90px;
     font-weight: bolder;
-    letter-spacing: 5px;
-    font-family: "Sofia", sans-serif;
     text-align: center;
+    letter-spacing: 5px;
+    padding-top: 100px;
 }
 
 .top-content h2 {
-    padding-top :40px;
     font-size: 50px;
+    font-weight: bold;
     text-align: center;
-    font-style: bold;
-    font-family: 'Times New Roman', Times, serif;
+    padding-top: 40px;
 }
 
-/* Start Movie List - Fauzy */
-.movie-list {
+.movies {
+    text-align: center;
     margin: 20px;
-    text-align: center;
 }
 
-.movies{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.movie-list h2 {
+h2 {
     font-size: 32px;
     font-weight: bold;
+    text-align: center;
 }
 
 hr {
@@ -142,8 +137,13 @@ hr {
     border: 1px solid black;
 }
 
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .movie-content {
-    flex-wrap: 1;
     width: 25%;
     margin-top: 20px;
 }
@@ -153,11 +153,10 @@ hr {
 }
 
 .movie-content a {
-    padding: 10px;
     color: black;
-    text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    padding: 10px;
 }
 
 .movie-content a:hover {
@@ -175,9 +174,8 @@ hr {
 .movie-content img:hover {
     transform: scale(1.07);
 }
-/* End Movie List - Fauzy */
 
-.group-list{
+.group {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -185,78 +183,117 @@ hr {
     margin-bottom: 15px;
 }
 
-.group-list > h1 {
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.group{
-    width: 100%;
+.group-list {
     display: flex;
     justify-content: center;
 }
 
-.personal{
-    text-align: center;
-    margin: 30px 40px;
-    height: 300px;
+.personal {
     width: 25%;
-    border: 1px solid #07575b;
-    cursor: pointer;
+    height: 300px;
+    text-align: center;
     background-color: #C4DFE6;
-    padding:20px;
-    border-radius:5px;
+    padding: 20px;
+    margin: 30px 40px;
+    cursor: pointer;
+    border: 2px solid #003b46;
+    border-radius: 5px;
     box-shadow: 7px 7px 10px #07575b;
-    transition: all 0.5s ease;
+    transition: 0.5s ease;
 }
 
-.personal img{
+.personal img {
     height: 150px;
     width: 150px;
     background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    border: 2px solid #003b46;
+    object-fit: cover;
     margin-bottom: 20px;
+    border: 3px solid #003b46;
+    border-radius: 50%;
 }
 
-.data-personal{
-    line-height:25px;
-}
-
-.data-personal h3{
+.personal h3 {
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.personal:hover{
+.personal:hover {
     transform: scale(1.07);
     box-shadow: 7px 7px 15px #064447;
 }
 
-footer{
+footer {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #003b46;
     color: #fff;
+    background-color: #003b46;
+    padding: 20px 40px;
 }
 
-.logo-footer{
+.logo-footer {
     display: flex;
     align-items: center;
 }
 
-.logo-footer img{
+.logo-footer img {
     width: 50px;
     height: 50px;
 }
 
-.logo-footer p{
-    margin-left: 10px;
+.logo-footer p {
     font-size: 24px;
+    margin-left: 10px;
+}
+
+/* Untuk Tablet */
+@media screen and (max-width: 1000px) {
+    .movie-content {
+        width: 30%;
+    }
+
+    .group-list {
+        flex-wrap: wrap;
+    }
+}
+
+/* Untuk Smartphone*/
+@media screen and (max-width: 670px) {
+    header nav {
+        justify-content: center;
+    }
+
+    .top-content h1 {
+        font-size: 60px;
+        padding-top: 120px;
+    }
+
+    .top-content h2 {
+        font-size: 35px;
+    }
+
+    .movie-content {
+        width: 100%;
+    }
+
+    .personal {
+        width: 50%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .logo-footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo-footer p {
+        font-size: 18px;
+    }
+
+    .disclaimer {
+        font-size: 14px;
+    }
 }
