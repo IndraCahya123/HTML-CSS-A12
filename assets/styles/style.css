@@ -93,7 +93,7 @@ header nav {
 }
 
 .top {
-    background-image: url(../images/bg-top.jpg);
+    background-image: url("https://static.hollywoodreporter.com/sites/default/files/2012/11/movie_theater_interior_a_l.jpg");
     background-position: center;
     background-size: cover;
     height: 550px;
