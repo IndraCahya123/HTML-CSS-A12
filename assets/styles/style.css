@@ -72,7 +72,6 @@ header {
 
 header nav {
     display: flex;
-    height: 10vh;
     background-color: #003b46;
     padding: 0 45px;
 }
@@ -84,7 +83,7 @@ header nav {
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 3px;
-    line-height: 10vh;
+    padding: 5px;
 }
 
 .left-nav img {
@@ -257,8 +256,22 @@ footer {
     }
 }
 
+@media screen and (max-width: 740px) {
+    .movie-content {
+        width: 50%;
+    }
+
+    .group-list {
+        flex-wrap: wrap;
+    }
+
+    .personal {
+        width: 50%;
+    }
+}
+
 /* Untuk Smartphone*/
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 470px) {
     header nav {
         justify-content: center;
     }
@@ -274,11 +287,7 @@ footer {
 
     .movie-content {
         width: 100%;
-    }
-
-    .personal {
-        width: 50%;
-    }
+    }  
 
     footer {
         padding: 10px;
@@ -295,5 +304,18 @@ footer {
 
     .disclaimer {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .logo-footer p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .personal img {
+        height: 100px;
+        width: 100px;
     }
 }
